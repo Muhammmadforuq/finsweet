@@ -11,7 +11,7 @@
 </head>
 <body> 
     <header class="relative">
-        <nav class="max-w-1320 flex justify-between items-center mx-auto px-5 py-4">
+        <nav class="max-w-xl md:max-w-5xl lg:max-w-1320 flex justify-between items-center mx-auto px-5 py-4">
             <a href="#">
               <img src="./image/Logo.svg" alt="">                  
             </a>
@@ -41,7 +41,7 @@
                   </svg>             
             </button>
             <!-- Mobile menu-->
-            <div class="menu absolute z-20 top-0 left-0 -translate-x-full h-screen w-full bg-white">
+            <div class="menu absolute z-20 top-0 left-0 -translate-x-full h-screen w-full transition ease-linear bg-white">
                 <div class="flex items-center justify-between py-4 px-5 text-white">
                     <a href="#">
                         <img src="./image/Logo.svg" alt="">
@@ -80,13 +80,9 @@
     </header>
     <main>
         <!-- her0  -->
-        <div class="relative bg-brand-skyBlue">
-            <div class="relative max-w-1320 mx-auto px-5 py-20 xl:py-28 space-y-6 lg:space-y-0">
-                <div class="lg:absolute bottom-0 lg:w-[45%] xl:w-1/2 h-full right-0">
-                    <img class="w-full h-full object-cover" src="./image/hero.png" alt="">
-                </div>
-    
-                <div class="lg:w-1/2 text-center md:text-start">
+        <div class="relative bg-brand-skyBlue overflow-x-hidden hidden">
+            <div class="relative max-w-1320 lg:flex justify-between space-x-6 lg:space-x-20 mx-auto px-5 space-y-6 lg:space-y-0">    
+                <div class="lg:w-1/2 text-center md:text-start py-20 lg:pt-36 pb-32">
                     <h2 class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-brand-darkBlue tracking-wide leading-tight pb-3">
                         Prosper with our bespoke solutions
                     </h2>
@@ -94,7 +90,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
                     </p>
 
-                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-x-10 gap-y-6 mb-8 lg:mb-14">
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-x-10 gap-y-6 pb-8 lg:mb-14">
                         <a href="#" class="text-white border border-transparent hover:border-brand-orange hover:text-brand-orange bg-brand-orange hover:bg-white  rounded-32px leading-4 transition-colors ease-linear duration-300 px-8 py-18">
                             See our services
                         </a>
@@ -113,16 +109,32 @@
                         <img class="hover:scale-110 transition-transform ease-linear duration-300" src="./image/Logo-1.svg" alt="">
                         <img class="hover:scale-110 transition-transform ease-linear duration-300" src="./image/Logo-2.svg" alt="">
                     </div>
-
-
                 </div> 
+
+                <div class="relative lg:w-1/2">
+                    <div class="h-full flex items-end space-x-52">
+                        <!-- orande line -->
+                        <svg class="relative z-20 mix-blend-multiply " width="181" height="370" viewBox="0 0 181 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g style="mix-blend-mode:multiply" opacity="0.75">
+                            <path d="M0 24C0 10.7452 10.7452 0 24 0H157C170.255 0 181 10.7452 181 24V370H0V24Z" fill="#F58A07"/>
+                            </g>
+                            </svg>
+                        <svg width="155" height="241" viewBox="0 0 155 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g style="mix-blend-mode:multiply">
+                                <path d="M0 24C0 10.7452 10.7452 0 24 0H131C144.255 0 155 10.7452 155 24V241H0V24Z" fill="#F58A07"/>
+                                </g>
+                            </svg>
+                                                              
+                    </div>
+                    <img class="absolute bottom-16 left-0 scale-125" src="./image/hero-man.png" alt="">
+                </div>
             </div>
-           
+            
         </div>
     <!-- We help more than 1500 companies from all sectors -->
-        <div class="max-w-1320 mx-auto px-5 py-24 hidden">
-         <div class="max-w-3xl pb-16">
-                <h2 class="font-semibold text-5xl text-brand-darkBlue pb-7">
+        <div class="max-w-xl md:max-w-5xl lg:max-w-1320 mx-auto px-5 py-14 md:py-20 lg:py-24">
+         <div class="max-w-3xl pb-8 lg:pb-16">
+                <h2 class="font-semibold text-3xl md:text-4xl lg:text-5xl text-brand-darkBlue pb-5 lg:pb-7">
                     We help more than 1500 companies from all sectors
                 </h2>
             <p class="font-medium lg:text-lg text-brand-gray-600">
@@ -130,10 +142,10 @@
             </p>
          </div>
 
-         <div class="grid lg:grid-cols-3 gap-10">
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 xl:gap-10">
             <div class="font-medium">
-                <img src="./image/Image-2.png" alt="">
-                <h3 class="text-2xl text-brand-black mt-8 mb-18">
+                <img class="w-full object-cover" src="./image/Image-2.png" alt="">
+                <h3 class="text-2xl text-brand-black pt-5 lg:pt-8 pb-3 md:pb-18">
                     Business strategy
                 </h3>
                 <p class="text-brand-gray-600 leading-7 pb-6">
@@ -150,8 +162,8 @@
                 </a>
             </div>
             <div class="font-medium">
-                <img src="./image/Image-1.png" alt="">
-                <h3 class="text-2xl text-brand-black mt-8 mb-18">
+                <img class="w-full" src="./image/Image-1.png" alt="">
+                <h3 class="text-2xl text-brand-black pt-5 lg:pt-8 pb-3 md:pb-18">
                     Digitalization
                 </h3>
                 <p class="text-brand-gray-600 leading-7 pb-6">
@@ -168,8 +180,8 @@
                 </a>
             </div>
             <div class="font-medium">
-                <img src="./image/Image.png" alt="">
-                <h3 class="text-2xl text-brand-black mt-8 mb-18">
+                <img class="w-full object-cover" src="./image/Image.png" alt="">
+                <h3 class="text-2xl text-brand-black pt-5 lg:pt-8 pb-3 md:pb-18">
                     Risk assessment
                 </h3>
                 <p class="text-brand-gray-600 leading-7 pb-6">
@@ -188,10 +200,10 @@
          </div>
 
         </div>
-       <div class="bg-brand-skyBlue hidden">
-        <div class="max-w-1320 mx-auto px-5 py-24">
-            <div class="lg:flex justify-between gap-10 pb-16">
-               <h2 class="lg:w-1/2 font-semibold text-4xl leading-tight text-brand-black pb-7">
+       <div class="bg-brand-skyBlue">
+        <div class="max-w-xl md:max-w-5xl lg:max-w-1320 mx-auto px-5 py-24">
+            <div class="lg:flex justify-between gap-10 pb-5 md:pb-7 lg:pb-16">
+               <h2 class="lg:w-1/2 font-semibold text-3xl md:text-4xl lg:leading-tight text-brand-black pb-7">
                 We are building software solution that solves your business challenges
                </h2>
                <p class="lg:w-1/2 font-medium lg:text-lg text-brand-darkBlue">
@@ -199,22 +211,22 @@
                </p>
             </div>
    
-            <div class="grid lg:grid-cols-3 gap-10">
-                  <div class="bg-white rounded-3xl pt-12 pr-8 pb pb-9 pl-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                  <div class="bg-white rounded-3xl p-7 lg:pt-12 lg:pr-8 lg:pb-9 lg:pl-10">
                         <img src="./image/boxicon-3.png" alt="">
                         <h3 class="font-semibold text-2xl text-brand-black pt-8 pb-4">Invoicing</h3>
                         <p class="font-medium text-brand-gray-600 leading-7">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.
                         </p>
                     </div> 
-                  <div class="bg-white rounded-3xl pt-12 pr-8 pb pb-9 pl-10">
+                  <div class="bg-white rounded-3xl p-7 lg:pt-12 lg:pr-8 lg:pb-9 lg:pl-10">
                     <img src="./image/boxicon-2.png" alt="">
                     <h3 class="font-semibold text-2xl text-brand-black pt-8 pb-4">Support</h3>
                     <p class="font-medium text-brand-gray-600 leading-7">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.
                     </p>
                     </div>  
-                  <div class="bg-white rounded-3xl pt-12 pr-8 pb pb-9 pl-10">
+                  <div class="bg-white rounded-3xl p-7 lg:pt-12 lg:pr-8 lg:pb-9 lg:pl-10">
                 <img src="./image/boxicon-1.png" alt="">
                 <h3 class="font-semibold text-2xl text-brand-black pt-8 pb-4">Surveying</h3>
                 <p class="font-medium text-brand-gray-600 leading-7">
@@ -226,11 +238,11 @@
         </div>
        </div>
        <!-- About -->
-        <div class="overflow-x-hidden hidden">
-            <div class="max-w-1320 mx-auto px-5 py-24">
+        <div class="overflow-x-hidden">
+            <div class="max-w-xl md:max-w-5xl lg:max-w-1320 mx-auto px-5 py-24">
                 <div class="grid lg:grid-cols-2 items-center gap-10">
                 <div class="">
-                    <h2 class="font-semibold text-5xl text-brand-black pb-8">
+                    <h2 class="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-brand-black pb-8">
                         We help more than 1500 companies from all sectors
                     </h2>
         
@@ -238,7 +250,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.
                     </p>
         
-                    <div class="flex items-center gap-7">
+                    <div class="md:flex items-center gap-7">
                         <div class="space-y-4">
                             <span class="block font-bold text-brand-orange text-4xl">15+</span>
                             <h3 class="font-semibold text-2xl text-brand-black">Awards received</h3>
